@@ -77,19 +77,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     .top-navbar {
-      .contact-section {
-        i {
-          margin-right: 10px;
-        }
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin-right: 30px;
-        a {
-          &:hover {
-            color: var(--bs-link-hover-color);
-          }
-        }
-      }
       .container-fluid {
         display: flex;
         font-size: 2rem;
@@ -116,6 +103,19 @@ a {
           .nav-link {
             padding-right: 0;
           }
+        }
+      }
+    }
+    .contact-section {
+      i {
+        margin-right: 10px;
+      }
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-right: 30px;
+      a {
+        &:hover {
+          color: var(--bs-link-hover-color);
         }
       }
     }
@@ -610,5 +610,18 @@ a {
   }
   &:active {
     color: #000;
+  }
+}
+
+
+@include media-breakpoint-down(sm) {
+  .header {
+    justify-content: space-between;
+    .bottom-navbar {
+      margin-left: auto;
+    }
+  }
+  .banner-section {
+    height: 200px;
   }
 }

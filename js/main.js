@@ -72,7 +72,6 @@ function bannerSwiper() {
   });
 
   const swiper3 = new Swiper('.swiper-gallery-1', {
-    slidesPerView: 5,
     spaceBetween: 50,
     freeMode: true,
     loop: true,
@@ -84,10 +83,23 @@ function bannerSwiper() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
   });
 
   const swiper4 = new Swiper('.swiper-gallery-2', {
-    slidesPerView: 5,
     spaceBetween: 30,
     freeMode: true,
     loop: true,
@@ -98,11 +110,24 @@ function bannerSwiper() {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
     },
   });
 
   const swiper5 = new Swiper('.swiper-gallery-3', {
-    slidesPerView: 5,
     spaceBetween: 30,
     freeMode: true,
     loop: true,
@@ -113,6 +138,20 @@ function bannerSwiper() {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
     },
   });
 }
