@@ -281,7 +281,6 @@ a {
         }
         a {
           font-size: 1.6rem;
-          font-weight: bold;
           line-height: 1.4;
           display: -webkit-box;
           -webkit-box-orient: vertical;
@@ -329,7 +328,7 @@ a {
           a {
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
+            -webkit-line-clamp: 2;
             overflow: hidden;
             &:hover {
               color: var(--bs-link-hover-color);
@@ -709,8 +708,12 @@ a {
     }
     nav {
       margin: 20px 0;
-      font-size: 1.8rem;
-      font-weight: bold;
+      .page-item {
+        .page-link {
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
@@ -779,7 +782,7 @@ a {
           a {
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
+            -webkit-line-clamp: 2;
             overflow: hidden;
             &:hover {
               color: var(--bs-link-hover-color);
@@ -832,6 +835,46 @@ a {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+
+// custom scss
+.content-section .tab-content .content-sm-image {
+  ul.list-group {
+    li.list-group-item {
+      a {
+        display: flex;
+        align-items: center;
+        img {} 
+        span {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+      }
+    }
+  } 
+}
+
+.post-section .post-aside .content-sm-image {
+  ul.list-group {
+    li.list-group-item {
+      a {
+        display: flex;
+        align-items: center;
+        img {} 
+        span {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+      }
+    }
+  } 
+}
+
+
 
 // breakpoints responsive
 
