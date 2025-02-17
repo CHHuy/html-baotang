@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Bootstrap Sass &amp; JS</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo-section">
+      <a href="index.html">
+        <img class="logo-img" src="uploads/logo.png" alt="logo">
+      </a>
+    </div>
+    <div class="navbar-section">
+      <div class="top-navbar">
+        <div class="container-fluid">
+          <div class="contact-section d-none d-sm-block">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+0917010065">091 701 0065</a>
+            &
+            <a href="tel:+02033825031">020 338 25031</a>
+          </div>
+          <div class="navbar-languages">
+            <a href="index.html" class="flag-icon flag-icon-vnm"></a>
+            <a href="index.html/#googtrans(vi|en)" class="flag-icon flag-icon-ukf"></a>
+          </div>
+          <div class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Giới thiệu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Lịch sử hình thành</a></li>
+                      <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
+                      <li><a class="dropdown-item" href="#">Chức năng, nhiệm vụ</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Mua vé online
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Google Play Store</a></li>
+                      <li><a class="dropdown-item" href="#">Apple Store</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tin tức - Sự kiện</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Trưng bày
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Trưng bày thường xuyên</a></li>
+                      <li><a class="dropdown-item" href="#">Trưng bày chuyên đề</a></li>
+                      <li><a class="dropdown-item" href="#">Bảo tàng 3D</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Di sản văn hoá
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Di tích danh thắng</a></li>
+                      <li><a class="dropdown-item" href="#">Di tích quốc gia đặc biệt</a></li>
+                      <li><a class="dropdown-item" href="#">Di tích quốc gia</a></li>
+                      <li><a class="dropdown-item" href="#">Di tích cấp tỉnh</a></li>
+                      <li><a class="dropdown-item" href="#">Khảo cổ học</a></li>
+                      <li><a class="dropdown-item" href="#">Lễ hội</a></li>
+                      <li><a class="dropdown-item" href="#">Nghề truyền thống</a></li>
+                      <li><a class="dropdown-item" href="#">Di tích khác</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Hiện vật - Tư liệu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Bảo vật quốc gia</a></li>
+                      <li><a class="dropdown-item" href="#">Bộ sưu tập hiện vật</a></li>
+                      <li><a class="dropdown-item" href="#">Hiện vật tiêu biểu</a></li>
+                      <li><a class="dropdown-item" href="#">Hình ảnh</a></li>
+                      <li><a class="dropdown-item" href="#">Video</a></li>
+                      <li><a class="dropdown-item" href="#">Tài liệu - Sách</a></li>
+                      <li><a class="dropdown-item" href="#">Văn bản QLNN về DSVH</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Giáo dục di sản</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Thông tin hỗ trợ
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Thời gian mở cửa</a></li>
+                      <li><a class="dropdown-item" href="#">Nội quy</a></li>
+                      <li><a class="dropdown-item" href="#">Giá vé</a></li>
+                      <li><a class="dropdown-item" href="#">Sơ đồ</a></li>
+                      <li><a class="dropdown-item" href="#">Dịch vụ</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                  </li>
+                  <li class="nav-item d-block d-sm-none">
+                    <div class="contact-section mt-3 ms-3 me-0">
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="tel:+0917010065">091 701 0065</a>
+                      &
+                      <a href="tel:+02033825031">020 338 25031</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-section">
+    <div class="jctkr-label">
+      Nổi bật
+    </div>
+    <div class="js-conveyor-1 jctkr-wrapper">
+      <ul>
+        <li>
+          <a href="#" title="Đầu tư cho di sản cần một quá trình bền bỉ, lâu dài..."><span> Đầu tư cho di sản cần
+              một..</span></a>
+        </li>
+        <li>
+          <a href="#" title="Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số"><span> Bảo tàng Quảng
+              Ninh mở rộng
+              không..</span></a>
+        </li>
+        <li>
+          <a href="#" title="CHÚC MỪNG NĂM MỚI 2025"><span>CHÚC MỪNG NĂM MỚI
+              2025</span></a>
+        </li>
+        <li>
+          <a href="#" title="BẢO TÀNG QUẢNG NINH THÔNG BÁO LỊCH NGHỈ TẾT NGUYÊN ĐÁN NĂM 2025"><span> BẢO TÀNG QUẢNG
+              NINH THÔNG BÁO
+              LỊCH..</span></a>
+        </li>
+        <li>
+          <a href="#" title="Chi bộ Bảo tàng Quảng Ninh: Đại hội lần thứ XVIII nhiệm kỳ 2025-2027"><span> Chi bộ Bảo
+              tàng Quảng
+              Ninh: Đại..</span></a>
+        </li>
+        <li>
+          <a href="#" title="“Kí ức về thời kỳ chống Pháp tại Vũng Đục”  của cô thanh niên xung phong năm ấy"><span>
+              “Kí ức về thời
+              kỳ chống Pháp..</span></a>
+        </li>
+        <li>
+          <a href="#" title="Huyện Ba Chẽ: Nỗ lực giữ gìn bản sắc văn hóa các dân tộc"><span> Huyện Ba Chẽ: Nỗ lực giữ
+              gìn..</span></a>
+        </li>
+        <li>
+          <a href="#" title="Các sự kiện nổi bật của Bảo tàng Quảng Ninh năm 2024"><span> Các sự kiện nổi bật của
+              Bảo..</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="search-section">
+    <form class="search-form">
+      <div class="row g-4">
+        <div class="col-auto">
+          <input type="text" class="form-control search-input" id="inputSearch" placeholder="Tìm kiếm">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="header-category">
+    <div class="container">
+      <h1>Di tích danh thắng</h1>
+      <div class="breadcrumd-section">
+        <nav
+          style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+          aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Di tích danh thắng</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-category">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="nav-wrapper">
+          <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="navbar-header">
+              <h3 href="#">Di tích danh thắng</h4>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Di tích quốc gia đặc biệt</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Di tích quốc gia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Di tích cấp tỉnh</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="content-page">
+            <div class="content-posts">
+              <a href="#" class="card">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="uploads/post_1.jpg" class="img-fluid"
+                      alt="Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số</h5>
+                      <p class="card-text">Bảo tàng Quảng Ninh đang phát triển nhiều mô hình trên nền tảng số như: Bảo
+                        tàng ảo, vé điện tử, thuyết minh tự động..</p>
+                      <p class="card-text">
+                        <i class="fa-solid fa-calendar-days mr-2"></i>
+                        <small class="text-body-secondary">30/08/2024 12:00 SA</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="card">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="uploads/post_1.jpg" class="img-fluid"
+                      alt="Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số</h5>
+                      <p class="card-text">Bảo tàng Quảng Ninh đang phát triển nhiều mô hình trên nền tảng số như: Bảo
+                        tàng ảo, vé điện tử, thuyết minh tự động..</p>
+                      <p class="card-text">
+                        <i class="fa-solid fa-calendar-days mr-2"></i>
+                        <small class="text-body-secondary">30/08/2024 12:00 SA</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="card">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="uploads/post_1.jpg" class="img-fluid"
+                      alt="Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số</h5>
+                      <p class="card-text">Bảo tàng Quảng Ninh đang phát triển nhiều mô hình trên nền tảng số như: Bảo
+                        tàng ảo, vé điện tử, thuyết minh tự động..</p>
+                      <p class="card-text">
+                        <i class="fa-solid fa-calendar-days mr-2"></i>
+                        <small class="text-body-secondary">30/08/2024 12:00 SA</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="card">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="uploads/post_1.jpg" class="img-fluid"
+                      alt="Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số</h5>
+                      <p class="card-text">Bảo tàng Quảng Ninh đang phát triển nhiều mô hình trên nền tảng số như: Bảo
+                        tàng ảo, vé điện tử, thuyết minh tự động..</p>
+                      <p class="card-text">
+                        <i class="fa-solid fa-calendar-days mr-2"></i>
+                        <small class="text-body-secondary">30/08/2024 12:00 SA</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="card">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="uploads/post_1.jpg" class="img-fluid"
+                      alt="Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số</h5>
+                      <p class="card-text">Bảo tàng Quảng Ninh đang phát triển nhiều mô hình trên nền tảng số như: Bảo
+                        tàng ảo, vé điện tử, thuyết minh tự động..</p>
+                      <p class="card-text">
+                        <i class="fa-solid fa-calendar-days mr-2"></i>
+                        <small class="text-body-secondary">30/08/2024 12:00 SA</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="card">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="uploads/post_1.jpg" class="img-fluid"
+                      alt="Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Bảo tàng Quảng Ninh mở rộng không gian trưng bày từ chuyển đổi số</h5>
+                      <p class="card-text">Bảo tàng Quảng Ninh đang phát triển nhiều mô hình trên nền tảng số như: Bảo
+                        tàng ảo, vé điện tử, thuyết minh tự động..</p>
+                      <p class="card-text">
+                        <i class="fa-solid fa-calendar-days mr-2"></i>
+                        <small class="text-body-secondary">30/08/2024 12:00 SA</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <h4>Bảo tàng Quảng Ninh</h4>
+          <ul>
+            <li>
+              <a href="#">Trang chủ</a>
+            </li>
+            <li>
+              <a href="#">Dịch vụ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Giới thiệu</h4>
+          <ul>
+            <li>
+              <a href="#">Lịch sử hình thành</a>
+            </li>
+            <li>
+              <a href="#">Cơ cấu tổ chức</a>
+            </li>
+            <li>
+              <a href="#">Chức năng, nhiệm vụ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Hòm thư góp ý</h4>
+          <a class="me-3" href="https://www.facebook.com/baotangquangninh/">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="mailto:hopthudientu@baotangquangninh.vn"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP
+          <br>BẢO TÀNG QUẢNG NINH
+          <br>Cơ quan chủ quản: Sở Văn hóa và Thể thao Quảng Ninh
+          <br>Đơn vị quản lý: Bảo tàng Quảng Ninh - Giấy phép số: 02/GPTTĐT-STTTT,
+          <br>ngày 19/01/2024 của Sở Thông tin và Truyền thông tỉnh Quảng Ninh.
+
+          <br>Chịu trách nhiệm nội dung: Nguyễn Thị Xiêm - Phó giám đốc
+          <br>Địa chỉ: Đường Trần Quốc Nghiễn, tp Hạ Long ,tỉnh Quảng Ninh
+          <br>Điện thoai: 0917010065 &amp; 02033.825031
+          <br>Email: hopthudientu@baotangquangninh.vn
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="third_party/jquery-3.7.1.min.js"></script>
+  <script src="third_party/swiper-11.2.4/package/swiper-bundle.min.js"></script>
+  <script src="third_party/jquery-conveyor-ticker/js/jquery.jConveyorTicker.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
