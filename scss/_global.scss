@@ -92,6 +92,9 @@ a {
       }
     }
     .bottom-navbar {
+      .navbar-toggler {
+        margin-left:auto;
+      }
       ul.navbar-nav {
         .nav-link {
           font-weight: bold;
@@ -617,11 +620,17 @@ a {
 @include media-breakpoint-down(sm) {
   .header {
     justify-content: space-between;
-    .bottom-navbar {
-      margin-left: auto;
-    }
   }
   .banner-section {
     height: 200px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .header {
+    .navbar-section {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 }

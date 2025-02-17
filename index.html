@@ -18,7 +18,7 @@
     <div class="navbar-section">
       <div class="top-navbar">
         <div class="container-fluid">
-          <div class="contact-section">
+          <div class="contact-section d-none d-sm-block">
             <i class="fa-solid fa-phone"></i>
             <a href="tel:+0917010065">091 701 0065</a>
             &
@@ -36,98 +36,111 @@
       <div class="bottom-navbar">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Giới thiệu
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Lịch sử hình thành</a></li>
-                    <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
-                    <li><a class="dropdown-item" href="#">Chức năng, nhiệm vụ</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Mua vé online
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Google Play Store</a></li>
-                    <li><a class="dropdown-item" href="#">Apple Store</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Tin tức - Sự kiện</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Trưng bày
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Trưng bày thường xuyên</a></li>
-                    <li><a class="dropdown-item" href="#">Trưng bày chuyên đề</a></li>
-                    <li><a class="dropdown-item" href="#">Bảo tàng 3D</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Di sản văn hoá
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Di tích danh thắng</a></li>
-                    <li><a class="dropdown-item" href="#">Di tích quốc gia đặc biệt</a></li>
-                    <li><a class="dropdown-item" href="#">Di tích quốc gia</a></li>
-                    <li><a class="dropdown-item" href="#">Di tích cấp tỉnh</a></li>
-                    <li><a class="dropdown-item" href="#">Khảo cổ học</a></li>
-                    <li><a class="dropdown-item" href="#">Lễ hội</a></li>
-                    <li><a class="dropdown-item" href="#">Nghề truyền thống</a></li>
-                    <li><a class="dropdown-item" href="#">Di tích khác</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Hiện vật - Tư liệu
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Bảo vật quốc gia</a></li>
-                    <li><a class="dropdown-item" href="#">Bộ sưu tập hiện vật</a></li>
-                    <li><a class="dropdown-item" href="#">Hiện vật tiêu biểu</a></li>
-                    <li><a class="dropdown-item" href="#">Hình ảnh</a></li>
-                    <li><a class="dropdown-item" href="#">Video</a></li>
-                    <li><a class="dropdown-item" href="#">Tài liệu - Sách</a></li>
-                    <li><a class="dropdown-item" href="#">Văn bản QLNN về DSVH</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Giáo dục di sản</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Thông tin hỗ trợ
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Thời gian mở cửa</a></li>
-                    <li><a class="dropdown-item" href="#">Nội quy</a></li>
-                    <li><a class="dropdown-item" href="#">Giá vé</a></li>
-                    <li><a class="dropdown-item" href="#">Sơ đồ</a></li>
-                    <li><a class="dropdown-item" href="#">Dịch vụ</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Liên hệ</a>
-                </li>
-              </ul>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Giới thiệu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Lịch sử hình thành</a></li>
+                      <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
+                      <li><a class="dropdown-item" href="#">Chức năng, nhiệm vụ</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Mua vé online
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Google Play Store</a></li>
+                      <li><a class="dropdown-item" href="#">Apple Store</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tin tức - Sự kiện</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Trưng bày
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Trưng bày thường xuyên</a></li>
+                      <li><a class="dropdown-item" href="#">Trưng bày chuyên đề</a></li>
+                      <li><a class="dropdown-item" href="#">Bảo tàng 3D</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Di sản văn hoá
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Di tích danh thắng</a></li>
+                      <li><a class="dropdown-item" href="#">Di tích quốc gia đặc biệt</a></li>
+                      <li><a class="dropdown-item" href="#">Di tích quốc gia</a></li>
+                      <li><a class="dropdown-item" href="#">Di tích cấp tỉnh</a></li>
+                      <li><a class="dropdown-item" href="#">Khảo cổ học</a></li>
+                      <li><a class="dropdown-item" href="#">Lễ hội</a></li>
+                      <li><a class="dropdown-item" href="#">Nghề truyền thống</a></li>
+                      <li><a class="dropdown-item" href="#">Di tích khác</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Hiện vật - Tư liệu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Bảo vật quốc gia</a></li>
+                      <li><a class="dropdown-item" href="#">Bộ sưu tập hiện vật</a></li>
+                      <li><a class="dropdown-item" href="#">Hiện vật tiêu biểu</a></li>
+                      <li><a class="dropdown-item" href="#">Hình ảnh</a></li>
+                      <li><a class="dropdown-item" href="#">Video</a></li>
+                      <li><a class="dropdown-item" href="#">Tài liệu - Sách</a></li>
+                      <li><a class="dropdown-item" href="#">Văn bản QLNN về DSVH</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Giáo dục di sản</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Thông tin hỗ trợ
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Thời gian mở cửa</a></li>
+                      <li><a class="dropdown-item" href="#">Nội quy</a></li>
+                      <li><a class="dropdown-item" href="#">Giá vé</a></li>
+                      <li><a class="dropdown-item" href="#">Sơ đồ</a></li>
+                      <li><a class="dropdown-item" href="#">Dịch vụ</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                  </li>
+                  <li class="nav-item d-block d-sm-none">
+                  <div class="contact-section mt-3 ms-3 me-0">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+0917010065">091 701 0065</a>
+                    &
+                    <a href="tel:+02033825031">020 338 25031</a>
+                  </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -632,7 +645,7 @@
   </div>
 
   <div class="row g-4">
-    <div class="col-12 col-md-7 col-lg-9">
+    <div class="col-12 col-md-12 col-lg-9">
       <div class="content-section">
         <a href="#" class="content-title">DI SẢN VĂN HÓA</a>
         <ul class="nav nav-tabs" id="myTab3" role="tablist">
@@ -660,7 +673,7 @@
         <div class="tab-content tab-gallery" id="myTabContent3">
           <div class="tab-pane fade show active" id="tab3-pane-1" role="tabpanel" aria-labelledby="tab3-1" tabindex="0">
             <div class="row g-3">
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-md-12 col-lg-6">
                 <div class="content-main">
                   <a href="#" class="card">
                     <div class="row g-0">
@@ -681,7 +694,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-12 col-md-3">
+              <div class="col-12 col-md-6 col-lg-3">
                 <div class="content-sub">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">
@@ -699,7 +712,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-12 col-md-3">
+              <div class="col-12 col-md-6 col-lg-3">
                 <div class="content-sub">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">
@@ -1236,7 +1249,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-5 col-lg-3">
+    <div class="col-12 col-md-12 col-lg-3">
       <div class="content-banner">
         <a href="#">
           <img src="uploads/QRveonline.jpg" />
